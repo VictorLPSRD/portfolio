@@ -1,16 +1,35 @@
-@media (max-width: 1024px) {
+
+
+@media screen and (max-width: 896px) and (orientation: portrait) {
+  body {
+      transform: rotate(90deg);
+      transform-origin: left top;
+      width: 100vh;
+      overflow-x: hidden;
+      position: fixed;
+      top: 100%;
+      left: 0;
+  }
+
     .cabecalho {
       justify-content: center;
       flex-direction: column;
       padding: 50px 0;
       gap: 15px;
     }
+
+    .cabecalho .logo img{
+      max-width: 30vw;
+    }
   
     .cabecalho .menu li a {
-      padding: 15px;
+      padding: 10px;
     }
   
     .home .informacoes {
+      padding: 30px;
+    }
+    .home .informacoes h3{
       padding: 30px;
     }
   
@@ -23,8 +42,18 @@
     }
   
     .compre-ja .cartao {
-      width: 70%;
+      width: 50%;
     }
+
+    .compre-ja.titulo{
+      width: 20%;
+      align-items: center;
+    }
+
+    .btn-plataforma{
+      max-width: 30px;
+    }
+
   }
   
   @media (max-width: 768px) {
